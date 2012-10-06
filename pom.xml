@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example.webapp</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Parent POM</name>
+
+    <description>
+        This project contains examples for the "scriptlets aren't evil" blog post.
+        It builds three web-apps, using the same controller and three different
+        view technologies.
+    </description>
+
+
+    <modules>
+        <module>common</module>
+        <module>webapp-scriptlet</module>
+        <module>webapp-jstl</module>
+<!--
+        <module>webapp-freemarker</module>
+-->
+    </modules>
+
+
+    <properties>
+        <!-- build configuration props, because Maven can't pick a sensible default -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <!-- all dependency versions are specified here -->
+        <commons-lang.version>3.1</commons-lang.version>
+        <javax.servlet.version>2.4</javax.servlet.version>
+        <javax.jstl.version>1.1.1</javax.jstl.version>
+        <log4j.version>1.2.12</log4j.version>
+        <org.freemarker.version>2.3.19</org.freemarker.version>
+        <springframework.version>3.1.1.RELEASE</springframework.version>
+
+    </properties>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <debug>true</debug>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+</project>
