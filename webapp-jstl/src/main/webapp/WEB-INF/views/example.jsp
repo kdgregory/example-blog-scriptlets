@@ -1,11 +1,9 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
-
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
-
+<%@page contentType="text/html; charset=UTF-8" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <html>
 <head>
-    <title>Example JSP Using Scriptlets</title>
+    <title>JSTL Example</title>
 </head>
 <body>
 
@@ -17,5 +15,6 @@
         >${emp}</option>
     </c:forEach>
     </select>
+
 </body>
 </html>

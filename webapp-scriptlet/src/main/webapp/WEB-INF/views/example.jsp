@@ -7,7 +7,7 @@
 
 <html>
 <head>
-    <title>Example JSP Using Scriptlets</title>
+    <title>Scriptlet Example</title>
 </head>
 <body>
 
@@ -25,5 +25,6 @@
         }
         %>
     </select>
+
 </body>
 </html>

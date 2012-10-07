@@ -8,7 +8,7 @@
     <select name="employeeSelector">
             <#list employees as emp>
                 <@compress single_line=true>
-                <option value="${emp.id}" 
+                <option value="${emp.id}"
                 <#if emp == selectedEmployee>
                     selected
                 </#if>
@@ -16,6 +16,6 @@
                 </@compress>
             </#list>
     </select>
-    
+
 </body>
 </html>
