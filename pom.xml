@@ -20,9 +20,7 @@
         <module>common</module>
         <module>webapp-scriptlet</module>
         <module>webapp-jstl</module>
-<!--
         <module>webapp-freemarker</module>
--->
     </modules>
 
 
